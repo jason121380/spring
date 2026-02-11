@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 春訓活動頁面</title>
+    <style>
+        /* 基礎重置：移除所有間距 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* 使用黑色背景增加質感 */
+            overflow-x: hidden; /* 防止水平滾動條 */
+        }
+
+        .image-container {
+            width: 100%;
+            line-height: 0; /* 移除圖片下方的微小間隙 */
+        }
+
+        .full-width-image {
+            width: 100%;
+            height: auto;
+            display: block; /* 移除行內元素的底邊距 */
+            object-fit: cover;
+        }
+
+        /* 視差滾動或平滑過場（可選，增加高端感） */
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /* 針對高解析度螢幕的優化 */
+        @media (min-width: 2560px) {
+            .full-width-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="2026春訓長圖.jpg" alt="2026春訓長圖" class="full-width-image">
+    </div>
+
+</body>
+</html>
